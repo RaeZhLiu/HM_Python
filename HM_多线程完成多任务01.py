@@ -4,7 +4,7 @@ import time
 
 def sing():
     sing_current_thread = threading.current_thread()
-    print("sing_current_thread", sing_current_thread)
+    print("sing_current_thread:", sing_current_thread)
     for i in range(3):
         print("singing....")
         time.sleep(0.3)
@@ -12,7 +12,7 @@ def sing():
 
 def dance():
     dance_current_thread = threading.current_thread()
-    print("dance_current_thread", dance_current_thread)
+    print("dance_current_thread:", dance_current_thread)
     for i in range(3):
         print("dancing....")
         time.sleep(0.3)
